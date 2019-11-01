@@ -1,0 +1,17 @@
+title: search engines
+tagline: A brand new course on Learning Lab
+description: how to connect git and github on the  search enggines
+template:
+  repo: search-engines-template
+  name: search-engines
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
